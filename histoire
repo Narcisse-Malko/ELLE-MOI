@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOTRE HISTOIRE - ELLE&MOI</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>
+  <header>
+    <h1>L'AVENTURE COMMENCE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="histoires.html">Histoires</a></li>
+        <li><a href="recits.html">Récits</a></li>
+        <li><a href="poemes.html">Poèmes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+        <section class="image-gallery">  
+  <div class="image-container">
+        <img src="a.jpg" alt="Image 1" class="image-story">
+        <p class="story-caption"> Ce baiser est le remake de notre tout premier. J'avoue que nous n'avons gardé que son souvenir en nous. Nous n'avons pas pu l'immortaliser comme celui-ci </p>
+      </div>
+      <div class="image-container">
+        <img src="Begin.jpg" alt="Image 2" class="image-story">
+        <p class="story-caption">Voilà la femme... </p>
+      </div>
+      <div class="image-container">
+        <img src="G.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption"> Le temps de la rencontre et de l'amitié </p>
+      </div>
+      <div class="image-container">
+        <img src="F.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption">La seule et l'unique en mode bande dessinée </p>
+      </div>
+      <div class="image-container">
+        <img src="H.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption"> Son répondant qui cherche à la joindre </p>
+      </div>
+      <div class="image-container">
+        <img src="I.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption"> Quand on se trouve, c'est le début de la folie enfantine dans les gestes </p>
+      </div>
+      <div class="image-container">
+        <img src="J.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption"> Que vous disais-je? </p>
+      </div>
+      <div class="image-container">
+        <img src="K.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption">C'est un règlement de compte à la brillantine </p>
+      </div>
+      <div class="image-container">
+        <img src="S.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption">Une complicité qui ne se décrit pas facilement </p>
+      </div>
+      <div class="image-container">
+        <img src="Q.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption"> C'est simplement ELLE </p>
+      </div>
+      <div class="image-container">
+        <img src="R.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption">J'ai rendu les armes, chers membres du syndicat </p>
+      </div>
+      <div class="image-container">
+        <img src="V.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption">Pourquoi? moi-même, je n'en sais rien </p>
+      </div>
+      <div class="image-container">
+        <img src="2.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption"> Le Prince et sa Princesse </p>
+      </div>
+      <div class="image-container">
+        <img src="3.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption">Attentive comme jamais </p>
+      </div>
+      <div class="image-container">
+        <img src="Blanc Noir.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption">Quand enfin elle me saisit dans ses bras, le monde n'a plus de sens à ses yeux </p>
+      </div>
+      <div class="image-container">
+        <img src="C.gif" alt="Image 26" class="image-story">
+        <p class="story-caption">On forme un duo de choc </p>
+      </div>
+      <div class="image-container">
+        <img src="9.gif" alt="Image 3" class="image-story">
+        <p class="story-caption">Un duo qui irradie l'amour </p>
+      </div>
+      <div class="image-container">
+        <img src="I.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption"> Ces soirées étaient simples et magiques à la fois </p>
+      </div>
+      <div class="image-container">
+        <img src="V.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption"> Elle est mon havre de paix et la raison de mes pics de tension  </p>
+      </div>
+      <div class="image-container">
+        <img src="X.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption"> C'est mon combat </p>
+      </div>
+      <div class="image-container">
+        <img src="Forever.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption">C'est l'engagement d'un amour qui doit transcender le temps </p>
+      </div>
+      <div class="image-container">
+        <img src="Unie dans la forme.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption"> Dans une sorte d'union complémentaire </p>
+      </div>
+      <div class="image-container">
+        <img src="En Marie.jpg" alt="Image 3" class="image-story">
+        <p class="story-caption"> Nous nous confions pour que fleurissent les fruits de cet amour qui nous portent </p>
+      </div>
+      <div class="image-container">
+        <img src="FOND.jpg" alt="Image 26" class="image-story">
+        <p class="story-caption"> Notre marche continue bientôt au peid de l'autel </p>
+      </div>
+    </div>
+</section>
+</main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+  // Sélectionner toutes les images et leurs légendes
+const images = document.querySelectorAll('.image-story');
+const captions = document.querySelectorAll('.story-caption');
+
+// Ajouter un événement de clic à chaque image
+images.forEach((image, index) => {
+  image.addEventListener('click', () => {
+    // Alterner la visibilité de la légende liée à l'image
+    if (captions[index].style.opacity === "1") {
+      captions[index].style.opacity = "0";
+      captions[index].style.transform = "translateY(10px)";
+    } else {
+      captions[index].style.opacity = "1";
+      captions[index].style.transform = "translateY(0)";
+    }
+  });
+});
+  </script>
+  <footer>
+    <p>&copy; 2024 Notre Histoire</p>
+  </footer>
+</body>
+</html>
