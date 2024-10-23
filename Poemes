@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poemes - ELLE&MOI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MA MUSE-MON INSPIRATION</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="histoires.html">Histoires</a></li>
+                <li><a href="recits.html">Récits</a></li>
+                <li><a href="poemes.html">Poèmes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>POEMES</h2>
+        <article>
+            <h3>Premiers écrits</h3>
+            <p>Résumé de l'histoire 1...</p>
+            <a href="#">Lire la suite</a>
+        </article>
+        <article>
+            <h3>L'amour comme des ailes</h3>
+            <p>Résumé de l'histoire 2...</p>
+            <a href="#">Lire la suite</a>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notre Histoire</p>
+    </footer>
+</body>
+</html>
