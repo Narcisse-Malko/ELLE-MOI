@@ -9,7 +9,6 @@ body {
     background-image: url('FOND.jpg');
     background-size: cover;
     color: #333;
-    filter: blur(5px);
     line-height: 1.1;
 }
 
