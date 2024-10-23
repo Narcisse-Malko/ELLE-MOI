@@ -115,59 +115,83 @@
         <p>&copy; 2024 Notre Histoire</p>
     </footer>
 
-    <!-- Ajout du script JavaScript pour charger le CSV et afficher images ou texte -->
     <script>
-        let slideIndex = 0;
-        showSlides();
-        
-        function showSlides() {
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            
-            slides[slideIndex - 1].style.display = "block";  
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 4000); // Change l'image toutes les 4 secondes
-        }
-        
-        // Fonction pour les boutons suivant/précédent
-        function plusSlides(n) {
-            showSpecificSlide(slideIndex += n);
-        }
-        
-        // Fonction pour les points indicateurs
-        function currentSlide(n) {
-            showSpecificSlide(slideIndex = n);
-        }
-        
-        function showSpecificSlide(n) {
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-            }
-            
-            for (let i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            
-            slides[slideIndex - 1].style.display = "block";  
-            dots[slideIndex - 1].className += " active";
-        }
-        </script>        
+let slideIndex = 0;
+let slideStyles = [
+    { transform: 'translateY(0)' },
+    { transform: 'translateY(-100%)', opacity: 0 },
+    { transform: 'translateY(0)', opacity: 1 },
+    { transform: 'translateY(100%)', opacity: 0 },
+    { transform: 'translateY(0)', opacity: 1 }
+];
+let currentStyleIndex = 0;
+
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+        currentStyleIndex = (currentStyleIndex + 1) % slideStyles.length;
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.transition = 'transform 1s ease-in-out, opacity 1s ease-in-out';
+    slides[slideIndex - 1].style.transform = slideStyles[currentStyleIndex].transform;
+    slides[slideIndex - 1].style.opacity = slideStyles[currentStyleIndex].opacity;
+
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+
+// Function for next/previous buttons
+function plusSlides(n) {
+    showSpecificSlide(slideIndex += n);
+}
+
+// Function for indicator dots
+function currentSlide(n) {
+    showSpecificSlide(slideIndex = n);
+}
+
+function showSpecificSlide(n) {
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.transition = 'transform 1s ease-in-out, opacity 1s ease-in-out';
+    slides[slideIndex - 1].style.transform = slideStyles[currentStyleIndex].transform;
+    slides[slideIndex - 1].style.opacity = slideStyles[currentStyleIndex].opacity;
+
+    dots[slideIndex - 1].className += " active";
+}
+</script>
 </body>
 </html>
 
